@@ -1,0 +1,6 @@
+# Required only for an Ethereum distribution when no private Ethereum RPC is
+# already configured elsewhere.
+LEGION_RPC_ETHEREUM=
+
+# Keep empty for check/watch. Exact value is required for --mode auto.
+LEGION_BROADCAST_CONFIRM=

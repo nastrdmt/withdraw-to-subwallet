@@ -1,0 +1,73 @@
+{
+  "projectSlug": "squid",
+  "distributionSlug": "squid",
+  "lockFile": "LEGION_CLAIM_LOCK.json",
+  "requireLockForBroadcast": true,
+  "allowBroadcast": false,
+  "pollIntervalMs": 750,
+  "distributionRefreshMs": 10000,
+  "preflightRefreshMs": 30000,
+  "requestTimeoutMs": 6000,
+  "broadcastTimeoutMs": 5000,
+  "receiptPollMs": 700,
+  "receiptTimeoutMs": 120000,
+  "gasLimitMultiplier": 1.3,
+  "gasPriceMultiplier": 1.15,
+  "vestingTypes": {
+    "LINEAR": 0
+  },
+  "expected": {
+    "chainId": "8453",
+    "tokenAddress": "0x1a44233FAe8D50F1AeB3a5d58dd426ff4814Cb53",
+    "distributorAddress": "0x3d3dd2940031e3b483e9c43da4911710e874a2a2"
+  },
+  "chains": {
+    "8453": {
+      "name": "Base",
+      "txType": 2,
+      "rpcInfoKeys": [
+        "rpcBaseAlchemy",
+        "rpcBaseCDP",
+        "rpcBase"
+      ],
+      "explorer": "https://basescan.org/tx/",
+      "legionFactory": {
+        "address": "0x6d1a5c2c7f71c3a16a36a247f12ce8aedeb5c4e7",
+        "trustedDeployers": [
+          "0x498e9319d2aaff5975cc872448ac4516c139ae28"
+        ],
+        "deploymentBlock": 30000000,
+        "lookbackBlocks": 100000,
+        "logChunkSize": 2000
+      }
+    },
+    "1": {
+      "name": "Ethereum",
+      "txType": 2,
+      "rpcEnvNames": [
+        "LEGION_RPC_ETHEREUM"
+      ],
+      "explorer": "https://etherscan.io/tx/"
+    }
+  },
+  "accounts": [
+    {
+      "id": "1",
+      "walletFile": "private.txt",
+      "walletIndex": 0,
+      "expectedWalletAddress": null,
+      "expectedClaimAmount": null,
+      "apiCookieFile": ".legion-secrets/legion-1.dynamic-jwt-token",
+      "appCookieFile": ".legion-secrets/legion-1.session"
+    },
+    {
+      "id": "2",
+      "walletFile": "private.txt",
+      "walletIndex": 1,
+      "expectedWalletAddress": null,
+      "expectedClaimAmount": null,
+      "apiCookieFile": ".legion-secrets/legion-2.dynamic-jwt-token",
+      "appCookieFile": ".legion-secrets/legion-2.session"
+    }
+  ]
+}

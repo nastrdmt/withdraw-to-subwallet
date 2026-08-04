@@ -1,1 +1,13 @@
 node_modules
+.env
+.env.*
+!.env.example
+AGENTS.md
+archive/
+history.log
+private.txt
+wallets.txt
+subWallet.txt
+output.json
+.legion-secrets/
+LEGION_CLAIM_LOCK*.json
